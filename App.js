@@ -11,23 +11,24 @@ import {
   StatusBar,
   Platform,
 } from "react-native";
+import WelcomeScreen from "./app/screens/WelcomeScreen";
 
 export default function App() {
-  let x = 1;
   console.log("It works");
   return (
     <SafeAreaView style={styles.container}>
-      <Text>Hello from React Native app!</Text>
+      <WelcomeScreen />
+      {/* <Text>Hello from React Native app!</Text>
       <TouchableHighlight onPress={() => console.log("Icon Pressed!")}>
         <Image
-          source={require("./assets/icon.png")}
+          source={require("./app/assets/icon.png")}
           style={{ width: 100, height: 100 }}
         />
       </TouchableHighlight>
       <Button
         title="Click Me!"
         onPress={() => Alert.alert("Terms", "Do you agree?", [{ text: "yes" }])}
-      />
+      /> */}
     </SafeAreaView>
   );
 }
